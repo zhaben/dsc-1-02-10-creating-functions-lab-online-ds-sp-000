@@ -1,32 +1,113 @@
-# Object Orientation
 
-## Overview
+***This is the template for creating a LAB for Data Science. Please make sure to change the title to the appropriate topic and leave the `- Lab` to indicate that this is a lab. Next add an introduction, objectives (which should be taken from the lab's outlined SWBATS), the lab's content, and summary.***
 
-We'll introduce the concept of Object Oriented Programming (OOP)
+> Note: All labs should have **Instructions:** that give a stepped flow to the lab's content. 
+* Instructions should be be specific. Students shouldn't have to make assumptions about what to do based on the instructions, they should immediately know.  
+* Instructions should be written in order of how to approach the lab. If you need to build a class before you can define any methods, the instructions should lead the student to build the class first.
 
-## Object-Oriented Programming (OOP)
+# LESSON TITLE - Lab
 
-*An object-oriented approach to application development makes programs more intuitive to design, faster to develop, more amenable to modification, and easier to understand.*  
-—[*Object-Oriented Programming with Objective-C*][apple_oop_guide_intro], Apple Inc.
+## Introduction
+Introduction goes here
 
-[apple_oop_guide_intro]: https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/OOP_ObjC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005149-CH1-SW2
+## Objectives
+You will be able to:
+* SWBATS 
+* GO 
+* HERE
 
-It's natural to wonder, "how can a string of ones and zeroes be referred to as an 'object'?" The use of the word "object" is an abstraction of thought. An "object" in code has no more physical form than does a word in any human language. Sure, words have physical representations: speaking a word causes air to vibrate in a sound wave, ink on a page can be shaped into symbols that represent the word, a meaning can be pointed at or mimed out; but none of these are the word itself. Human language is a system of abstraction: it communicates the *idea* of a thing, but not the thing itself.
+## Introduction
 
-![](https://upload.wikimedia.org/wikipedia/en/b/b9/MagrittePipe.jpg)  
-Translation: "This is not a pipe." - [*The Treachery of Images*](https://en.wikipedia.org/wiki/The_Treachery_of_Images), [René Magritte](https://en.wikipedia.org/wiki/Ren%C3%A9_Magritte), 1927  
+As we know, we can use functions to name sequences of our code, thus making our code more expressive. We can also use functions to allow us to reuse our code. In this lab we will practice using functions for these purposes.
 
-This image of a pipe is no more a pipe than the word "pipe" is a pipe; in the same way, a code object named `pipe` is not a pipe, but only another form of representing a pipe.
+## Objectives
 
->As humans, we’re constantly faced with myriad facts and impressions that we must make sense of. To do so, we must abstract underlying structure away from surface details and discover the fundamental relations at work. Abstractions reveal causes and effects, expose patterns and frameworks, and separate what’s important from what’s not. Object orientation provides an abstraction of the data on which you operate; moreover, it provides a concrete grouping between the data and the operations you can perform with the data—in effect giving the data behavior.  
->—[*Object-Oriented Programming with Objective-C*](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/OOP_ObjC/Articles/ooOOP.html#//apple_ref/doc/uid/TP40005149-CH8-SW3), Apple Inc.
+* Practice declaring and returning values from functions
+* Practice accessing variables that are outside of a function's scope, from inside of a function
 
-A code object representing a water pipe (instead of a smoking pipe) might contain values for `length`, `diameter`, `material`, and `manufacturer`. The bundling of these individual pieces of information together begins to form a larger whole.
+## Writing our first functions
 
-Object-Oriented Programming, however, does more than just bundle up individual pieces of data that represent a "thing" — it also bundles customized functions that can be performed *on* that data. These are called **methods**: behaviors that an object performs upon its internal data and even upon other code objects.
+Imagine we are working on our list of travel destinations -- which is really turning out to be a full time job. We have our list of `travel_destinations` which we assign below. Write a function called `number_of_destinations` that returns the number of destinations we have on our list.
 
-An object in code is a thing with all the data and all the logic required to complete a task. Objects are models and metaphors for the problems we solve in code.
 
-Object-oriented programming was born from the trend of making digital lives reflect our real lives. In the 1970's, [Adele Goldberg](https://en.wikipedia.org/wiki/Adele_Goldberg_%28computer_scientist%29) and [Alan Kay](https://en.wikipedia.org/wiki/Alan_Kay) developed an object-oriented language at Xerox PARC called SmallTalk, which was used in the first personal computer.
+```python
+travel_destinations = ['argentina', 'mexico', 'italy', 'finland', 'canada', 'croatia']
+def number_of_destinations():
+    pass
+```
 
-Python comes with a few types of Objects to get us started, things like `int` for Integer, `str` for String, `list` for List, etc. We call these base types of Objects "Primitives." But what if we wanted to create a new type in our programming universe, a new kind of object for our code? That's what the `class` keyword and object orientation allows us to do.
+
+```python
+number_of_destinations() # 6
+```
+
+Now write another function called `next_up` that returns our first destination (the destination with the lowest index), in the `travel_destinations` list.
+
+
+```python
+def next_up():
+    pass
+```
+
+
+```python
+travel_destinations = ['argentina', 'mexico', 'italy']
+next_up() # 'argentina'
+```
+
+
+```python
+travel_destinations = ['finland', 'canada', 'croatia']
+next_up() # 'finland'
+```
+
+Ok, now write a function called `favorite_destination` that returns the string `'madagascar'`.
+
+
+```python
+travel_destinations = ['argentina', 'mexico', 'italy', 'finland', 'canada', 'croatia']
+def favorite_destination():
+    pass
+```
+
+
+```python
+favorite_destination() # 'madagascar'
+```
+
+Again, let's declare an array called `travel_destinations`. Change the function `favorite_destination` so that it continues to return the string `'madagascar'`, but also adds the string `'madagascar'` to the end of the list of destinations.
+
+
+```python
+travel_destinations = ['argentina', 'mexico', 'italy', 'finland', 'canada', 'croatia']
+favorite_destination()
+travel_destinations[-1] # 'madagascar'
+```
+
+Now let's write another function which iterates through the list of `destinations` and capitalizes the first letter of each word. It should return a list of capitalized destinations.
+
+
+```python
+travel_destinations = ['argentina', 'mexico', 'italy', 'finland', 'canada', 'croatia']
+def capitalize_countries():
+    pass
+```
+
+
+```python
+capitalize_countries() # ['Argentina', 'Mexico', 'Italy', 'Finland', 'Canada', 'Croatia']
+```
+
+Great! Now if someone adds a country that is lowercased to our list of destinations, we can simply call our function again to capitalize each of the destinations in the list.
+
+
+```python
+travel_destinations = ['argentina', 'mexico', 'italy', 'finland', 'canada', 'croatia']
+capitalize_countries() # ['Argentina', 'Mexico', 'Italy', 'Finland', 'Canada', 'Croatia']
+travel_destinations.append('japan')
+capitalize_countries() # ['Argentina', 'Mexico', 'Italy', 'Finland', 'Canada', 'Croatia', 'Japan']
+```
+
+## Summary
+
+Great job! In this lab we were able to get practice both writing and returning values from functions. We also practiced accessing variables not local to the function but in the global scope.
