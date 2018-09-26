@@ -1,39 +1,22 @@
 
-***This is the template for creating a LAB for Data Science. Please make sure to change the title to the appropriate topic and leave the `- Lab` to indicate that this is a lab. Next add an introduction, objectives (which should be taken from the lab's outlined SWBATS), the lab's content, and summary.***
-
-> Note: All labs should have **Instructions:** that give a stepped flow to the lab's content. 
-* Instructions should be be specific. Students shouldn't have to make assumptions about what to do based on the instructions, they should immediately know.  
-* Instructions should be written in order of how to approach the lab. If you need to build a class before you can define any methods, the instructions should lead the student to build the class first.
-
-# LESSON TITLE - Lab
+# Creating Functions - Lab
 
 ## Introduction
-Introduction goes here
-
-## Objectives
-You will be able to:
-* SWBATS 
-* GO 
-* HERE
-
-## Introduction
-
 As we know, we can use functions to name sequences of our code, thus making our code more expressive. We can also use functions to allow us to reuse our code. In this lab we will practice using functions for these purposes.
 
 ## Objectives
+You will be able to:
+* Create and use their own custom functions
 
-* Practice declaring and returning values from functions
-* Practice accessing variables that are outside of a function's scope, from inside of a function
+## Instructions: 
+### Writing our first functions
 
-## Writing our first functions
-
-Imagine we are working on our list of travel destinations -- which is really turning out to be a full time job. We have our list of `travel_destinations` which we assign below. Write a function called `number_of_destinations` that returns the number of destinations we have on our list.
+Imagine we are working on our list of travel destinations -- which can really turn out to be a full time job if we like to travel. We have our list of `travel_destinations` which we assign below. Write a function called `number_of_destinations` that returns the number of destinations we have on our list.
 
 
 ```python
 travel_destinations = ['argentina', 'mexico', 'italy', 'finland', 'canada', 'croatia']
-def number_of_destinations():
-    pass
+# define function here
 ```
 
 
@@ -45,8 +28,7 @@ Now write another function called `next_up` that returns our first destination (
 
 
 ```python
-def next_up():
-    pass
+# define function here
 ```
 
 
@@ -65,9 +47,7 @@ Ok, now write a function called `favorite_destination` that returns the string `
 
 
 ```python
-travel_destinations = ['argentina', 'mexico', 'italy', 'finland', 'canada', 'croatia']
-def favorite_destination():
-    pass
+# define function here
 ```
 
 
@@ -75,7 +55,7 @@ def favorite_destination():
 favorite_destination() # 'madagascar'
 ```
 
-Again, let's declare an array called `travel_destinations`. Change the function `favorite_destination` so that it continues to return the string `'madagascar'`, but also adds the string `'madagascar'` to the end of the list of destinations.
+Again, let's declare an array called `travel_destinations`. Write a new function called `add_favorite_destination` that also returns the string `'madagascar'`, but adds the string `'madagascar'` to the end of the list, `travel_destinations`, as well.
 
 
 ```python
@@ -84,13 +64,12 @@ favorite_destination()
 travel_destinations[-1] # 'madagascar'
 ```
 
-Now let's write another function which iterates through the list of `destinations` and capitalizes the first letter of each word. It should return a list of capitalized destinations.
+Now let's write another function called `capitalize_countries` which iterates through the list of `travel_destinations` and capitalizes the first letter of each word. It should return a list of capitalized destinations.
 
 
 ```python
 travel_destinations = ['argentina', 'mexico', 'italy', 'finland', 'canada', 'croatia']
-def capitalize_countries():
-    pass
+# define function here
 ```
 
 
