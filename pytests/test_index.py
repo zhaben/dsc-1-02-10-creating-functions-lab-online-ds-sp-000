@@ -5,7 +5,7 @@ import importlib
 
 # importing objects from the jupyter notebook here
 import ipynb.fs.full.index
-from ipynb.fs.full.index import number_of_destinations, next_up, favorite_destination, add_favorite_destination, capitalize_countries
+from ipynb.fs.full.index import *
 
 # tests to ensure correct environment is loaded
 def test_conda_environment_activated():
