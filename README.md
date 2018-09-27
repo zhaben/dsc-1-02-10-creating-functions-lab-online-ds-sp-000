@@ -17,16 +17,13 @@ Imagine we are working on our list of travel destinations -- which can really tu
 ```python
 travel_destinations = ['argentina', 'mexico', 'italy', 'finland', 'canada', 'croatia']
 # define function here
-
-def number_of_destinations():
-    return len(travel_destinations)
 ```
 
 > Below, remove the first `#` to uncomment the following line(s) of code and then press `shift` + `enter` to run the cell
 
 
 ```python
-number_of_destinations() # 6
+# number_of_destinations() # 6
 ```
 
 Now write another function called `next_up` that returns our first destination (the destination with the lowest index), in the `list_of_destinations` list.
@@ -34,8 +31,6 @@ Now write another function called `next_up` that returns our first destination (
 
 ```python
 # define function here
-def next_up():
-    return list_of_destinations[0]
 ```
 
 > Below, remove the first `#` to uncomment the following line(s) of code and then press `shift` + `enter` to run the cell
@@ -43,13 +38,13 @@ def next_up():
 
 ```python
 list_of_destinations = ['finland', 'canada', 'croatia']
-next_up() # 'argentina'
+# next_up() # 'argentina'
 ```
 
 
 ```python
 list_of_destinations = ['argentina', 'mexico', 'italy']
-next_up() # 'finland'
+# next_up() # 'finland'
 ```
 
 Ok, now write a function called `favorite_destination` that returns the string `'madagascar'`.
@@ -57,8 +52,6 @@ Ok, now write a function called `favorite_destination` that returns the string `
 
 ```python
 # define function here
-def favorite_destination():
-    return 'madagascar'
 ```
 
 > Below, remove the first `#` to uncomment the following line(s) of code and then press `shift` + `enter` to run the cell
@@ -73,9 +66,6 @@ Again, let's declare a list called `favorite_destinations`. Write a new function
 
 ```python
 # define function here
-def add_favorite_destination():
-    favorite_destinations.append('madagascar')
-    return 'madagascar'
 ```
 
 > Below, remove the first `#` to uncomment the following line(s) of code and then press `shift` + `enter` to run the cell
@@ -83,7 +73,7 @@ def add_favorite_destination():
 
 ```python
 favorite_destinations = ['argentina', 'mexico', 'italy', 'finland', 'canada', 'croatia']
-add_favorite_destination()
+# add_favorite_destination()
 favorite_destinations[-1] # 'madagascar'
 ```
 
@@ -93,18 +83,13 @@ Now let's write another function called `capitalize_countries` which iterates th
 ```python
 capitalized_destinations = ['argentina', 'mexico', 'italy', 'finland', 'canada', 'croatia']
 # define function here
-def capitalize_countries():
-    capitalized = []
-    for country in capitalized_destinations:
-        capitalized.append(country.capitalize())
-    return capitalized
 ```
 
 > Below, remove the first `#` to uncomment the following line(s) of code and then press `shift` + `enter` to run the cell
 
 
 ```python
-capitalize_countries() # ['Argentina', 'Mexico', 'Italy', 'Finland', 'Canada', 'Croatia']
+# capitalize_countries() # ['Argentina', 'Mexico', 'Italy', 'Finland', 'Canada', 'Croatia']
 ```
 
 Great! Now if someone adds a country that is lowercased to our list of destinations, we can simply call our function again to capitalize each of the destinations in the list.
