@@ -58,7 +58,7 @@ Ok, now write a function called `favorite_destination` that returns the string `
 
 
 ```python
-favorite_destination() # 'madagascar'
+# favorite_destination() # 'madagascar'
 ```
 
 Again, let's declare a list called `favorite_destinations`. Write a new function called `add_favorite_destination` that also returns the string `'madagascar'`, but adds the string `'madagascar'` to the end of the list, `favorite_destinations`, as well.
