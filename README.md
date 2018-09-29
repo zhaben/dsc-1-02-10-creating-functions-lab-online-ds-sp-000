@@ -2,16 +2,16 @@
 # Creating Functions - Lab
 
 ## Introduction
-As we know, we can use functions to name sequences of our code, thus making our code more expressive. We can also use functions to allow us to reuse our code. In this lab we will practice using functions for these purposes.
+As we know, we can use functions to name sequences of our code, thus making our code more expressive. We can also use functions to allow us to reuse our code. In this lab we will practice using functions for those purposes.
 
 ## Objectives
 You will be able to:
-* Create and use their own custom functions
+* Create and use your own custom functions
 
 ## Instructions: 
 ### Writing our first functions
 
-Imagine we are working on our list of travel destinations -- which can really turn out to be a full time job if we like to travel. We have our list of `travel_destinations` which we assign below. Write a function called `number_of_destinations` that returns the number of destinations we have on our list.
+Imagine we are creating a list of travel destinations -- which can really turn out to be a full time job if we like to travel. We have our list of `travel_destinations` which we assign below. Write a function called `number_of_destinations` that returns the number of destinations we have on our list.
 
 
 ```python
