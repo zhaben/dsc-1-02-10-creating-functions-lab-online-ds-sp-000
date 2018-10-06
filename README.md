@@ -2,7 +2,8 @@
 # Creating Functions - Lab
 
 ## Introduction
-As we know, we can use functions to name sequences of our code, thus making our code more expressive. We can also use functions to allow us to reuse our code. In this lab we will practice using functions for those purposes.
+
+As you know, we can use functions to name snippets of our code, thus making our code more expressive. We can also use functions to allow us to reuse our code. In this lab we will practice using functions for both of those purposes.
 
 ## Objectives
 You will be able to:
@@ -37,13 +38,13 @@ Now write another function called `next_up` that returns our first destination (
 
 
 ```python
-list_of_destinations = ['finland', 'canada', 'croatia']
+list_of_destinations = ['argentina', 'canada', 'croatia']
 # next_up() # 'argentina'
 ```
 
 
 ```python
-list_of_destinations = ['argentina', 'mexico', 'italy']
+list_of_destinations = ['finland', 'mexico', 'italy']
 # next_up() # 'finland'
 ```
 
@@ -96,4 +97,4 @@ Great! Now if someone adds a country that is lowercased to our list of destinati
 
 ## Summary
 
-Great job! In this lab we were able to get practice both writing and returning values from functions. We also practiced accessing variables not local to the function but in the global scope.
+Great job! In this lab we were able to get practice both creating and returning values from functions. We also practiced accessing variables not local to the function but in the global scope.
