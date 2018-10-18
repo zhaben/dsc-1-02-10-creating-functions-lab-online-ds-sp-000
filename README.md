@@ -27,6 +27,13 @@ travel_destinations = ['argentina', 'mexico', 'italy', 'finland', 'canada', 'cro
 # number_of_destinations() # 6
 ```
 
+
+
+
+    6
+
+
+
 Now write another function called `next_up` that returns our first destination (the destination with the lowest index), in the `list_of_destinations` list.
 
 
@@ -43,10 +50,11 @@ list_of_destinations = ['argentina', 'canada', 'croatia']
 ```
 
 
-```python
-list_of_destinations = ['finland', 'mexico', 'italy']
-# next_up() # 'finland'
-```
+
+
+    'argentina'
+
+
 
 Ok, now write a function called `favorite_destination` that returns the string `'madagascar'`.
 
@@ -61,6 +69,13 @@ Ok, now write a function called `favorite_destination` that returns the string `
 ```python
 # favorite_destination() # 'madagascar'
 ```
+
+
+
+
+    'madagascar'
+
+
 
 Again, let's declare a list called `favorite_destinations`. Write a new function called `add_favorite_destination` that also returns the string `'madagascar'`, but adds the string `'madagascar'` to the end of the list, `favorite_destinations`, as well.
 
@@ -78,6 +93,16 @@ favorite_destinations = ['argentina', 'mexico', 'italy', 'finland', 'canada', 'c
 favorite_destinations[-1] # 'madagascar'
 ```
 
+    ['argentina', 'mexico', 'italy', 'finland', 'canada', 'croatia', 'madagascar']
+
+
+
+
+
+    'madagascar'
+
+
+
 Now let's write another function called `capitalize_countries` which iterates through the list of `capitalized_destinations` and capitalizes the first letter of each word. It should return a list of capitalized destinations.
 
 
@@ -92,6 +117,13 @@ capitalized_destinations = ['argentina', 'mexico', 'italy', 'finland', 'canada',
 ```python
 # capitalize_countries() # ['Argentina', 'Mexico', 'Italy', 'Finland', 'Canada', 'Croatia']
 ```
+
+
+
+
+    ['Argentina', 'Mexico', 'Italy', 'Finland', 'Canada', 'Croatia']
+
+
 
 Great! Now if someone adds a country that is lowercased to our list of destinations, we can simply call our function again to capitalize each of the destinations in the list.
 
